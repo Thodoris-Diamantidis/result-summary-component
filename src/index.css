@@ -107,7 +107,7 @@ body {
 
 /* Summary Styling */
 .summary {
-  --content-padding: 1rem;
+  --content-padding: 1.7rem;
   --content-spacing: 1rem;
   display: grid;
   overflow: hidden;
