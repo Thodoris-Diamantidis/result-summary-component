@@ -21,9 +21,9 @@ export default function App() {
       <article className="summary">
         <div className="summary__results">
           <h1 className="summary__title">Your Result</h1>
-          <p className="summary__score">
+          <div className="summary__score">
             <p className="summary__finalscore">76</p> of 100
-          </p>
+          </div>
           <p className="summary__descr">
             <span>Great</span> You scored higher than 65% of the people who have
             taken these tests.
