@@ -235,16 +235,13 @@ body {
 @media (min-width: 600px) {
   .summary {
     grid-template-columns: 1fr 1fr;
+    box-shadow: 20px 12px 15px 0px rgba(0 0 0/ 16%);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
 
   .summary__results {
     border-radius: 2rem;
-  }
-
-  .summary__details {
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.2);
   }
 
   .summary__descr {
