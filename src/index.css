@@ -4,9 +4,16 @@
 :root {
   /* Colors */
   --clr-primary-lightRed-300: hsl(0, 100%, 67%);
+  --clr-primary-lightRed-100: hsla(0, 100%, 67%, 0.1);
+
   --clr-primary-orangeyYellow-600: hsl(39, 100%, 56%);
+  --clr-primary-orangeyYellow-300: hsla(39, 100%, 56%, 0.1);
+
   --clr-primary-greenTeal-400: hsl(166, 100%, 37%);
+  --clr-primary-greenTeal-200: hsla(166, 100%, 37%, 0.1);
+
   --clr-primary-cobaltBlue-500: hsl(234, 85%, 45%);
+  --clr-primary-cobaltBlue-200: hsla(234, 85%, 45%, 0.1);
 
   --clr-white-100: hsl(0, 0%, 100%);
   --clr-paleBlue-100: hsl(221, 100%, 96%);
@@ -105,6 +112,21 @@ body {
   }
 }
 
+/* Button Styling */
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.55rem 0rem;
+  background-color: var(--clr-grayBlue-700);
+  color: var(--clr-white-100);
+  margin: var(--content-spacing);
+}
+
+.button:is(:hover, :focus) {
+  background-color: var(--clr-royalBlue-400);
+}
+
 /* Summary Styling */
 .summary {
   --content-padding: 1.7rem;
@@ -171,6 +193,45 @@ body {
   color: var(--clr-white-100);
 }
 
+.summary__details {
+  padding: var(--content-padding);
+  display: grid;
+}
+
+.summary__subtitle {
+  font-size: 1.2rem;
+  font-weight: var(--fw-bold);
+  color: black;
+}
+
+.summary__grades {
+  margin: var(--content-spacing);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.summary__grades div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary__grades span {
+  color: black;
+  font-weight: var(--fw-bold);
+}
+
+.summary__grades p:first-of-type {
+  display: flex;
+  gap: 1rem;
+  font-weight: var(--fw-bold);
+}
+
+.summary__grade {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+
 /* Responsive design for larger screen > 600 px (also calling it after all styles for mobiles have been set so i dont get specificity problems*/
 @media (min-width: 600px) {
   .summary {
@@ -179,6 +240,13 @@ body {
 
   .summary__results {
     border-radius: 2rem;
+  }
+
+  .summary__details {
+    border: 1px solid slategray;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 10px 10px 5px 1 rgba(0, 0, 0, 0.7);
   }
 
   .summary__descr {

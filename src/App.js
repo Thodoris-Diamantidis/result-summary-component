@@ -1,6 +1,21 @@
 import React from "react";
+import data from "./data.json";
 
 export default function App() {
+  const bgcolors = [
+    "var(--clr-primary-lightRed-100)",
+    "var(--clr-primary-orangeyYellow-300)",
+    "var(--clr-primary-greenTeal-200)",
+    "var(--clr-primary-cobaltBlue-200)",
+  ];
+
+  const headingColors = [
+    "var(--clr-primary-lightRed-300)",
+    "var(--clr-primary-orangeyYellow-600)",
+    "var(--clr-primary-greenTeal-400)",
+    "var(--clr-primary-cobaltBlue-500)",
+  ];
+
   return (
     <main>
       <article className="summary">
@@ -14,15 +29,27 @@ export default function App() {
             taken these tests.
           </p>
         </div>
-        <div className="summary_details">
-          <p className="summary_subtitle">Summary</p>
-          <div className="summary_grades">
-            <span>Reaction 80 / 100</span>
-            <span>Memory 92 / 100</span>
-            <span>Verbal 61 / 100</span>
-            <span>Visual 72 / 100</span>
+        <div className="summary__details">
+          <p className="summary__subtitle">Summary</p>
+          <div className="summary__grades">
+            {data.map((item, index) => (
+              <div
+                className="summary__grade"
+                key={index}
+                style={{ backgroundColor: bgcolors[index] }}
+              >
+                <p style={{ color: headingColors[index] }}>
+                  <img src={item.icon} alt="itemicon" />
+                  {item.category}
+                </p>
+                <p>
+                  <span>{item.score}</span> / 100
+                </p>
+              </div>
+            ))}
           </div>
-          <button>Continue</button>
+
+          <button className="button">Continue</button>
         </div>
       </article>
     </main>
