@@ -40,12 +40,19 @@ Users should be able to:
 ## My process
 
 My proccess for this project is almost the same as any project that i start:
+</br>
 -First step was to define my html structure and make a starter CSS file so it will be easier later on to style the whole project
+</br>
 -Started of with adding a CSS resseter from (https://www.joshwcomeau.com/css/custom-css-reset/)
+</br>
 -Added some Custom variables to help me in this project(guided by the style-guide.md)
+</br>
 -Second step was to start styling for mobile-first
+</br>
 -Started styling untill i was happy with the result
+</br>
 -Went and did the responsiveness afterwards
+</br>
 -Third and last step was to perfect the styling
 
 ### Built with
