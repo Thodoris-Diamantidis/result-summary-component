@@ -110,7 +110,7 @@ As always i would love to expand and learn new things on css,js,react
 
 ### Useful resources
 
-- [CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) - This helped me a ton by starting of my Css file on the right foot. I really liked this pattern and will use
+- [CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) - This helped me a ton by starting of my Css file on the right foot. I really liked this pattern and will use it going forward.
 
 ## Author
 
