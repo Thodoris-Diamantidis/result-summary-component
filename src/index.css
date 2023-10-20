@@ -132,7 +132,6 @@ body {
   --content-padding: 1.7rem;
   --content-spacing: 1rem;
   display: grid;
-  overflow: hidden;
   max-width: 600px;
 }
 
@@ -243,10 +242,9 @@ body {
   }
 
   .summary__details {
-    border: 1px solid slategray;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    box-shadow: 10px 10px 5px 1 rgba(0, 0, 0, 0.7);
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.2);
   }
 
   .summary__descr {
